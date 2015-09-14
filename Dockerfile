@@ -1,4 +1,4 @@
-FROM n3nus/base_image:v1
+FROM wizeye/n3n-ui-mongodb
 MAINTAINER Jun-Hee Lee <jh.lee@n3n.io>
 
 # Install MongoDB
