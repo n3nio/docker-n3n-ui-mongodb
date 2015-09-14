@@ -1,4 +1,4 @@
-FROM wizeye/n3n-ui-mongodb
+FROM wizeye/n3n-ui-base
 MAINTAINER Jun-Hee Lee <jh.lee@n3n.io>
 
 # Install MongoDB
