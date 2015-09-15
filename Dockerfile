@@ -11,7 +11,7 @@ RUN yum -y install mongodb; yum clean all
 ADD replicaSet.sh /replicaSet.sh
 ADD replicaSet.js /replicaSet.js
 
-RUN chomod +x /replicaSet.sh
+RUN chmod +x /replicaSet.sh
 
 # Expose port 27017 from the container to the host
 EXPOSE 27017
