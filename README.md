@@ -31,14 +31,14 @@ $ docker run -i -t -p 27019:27017 -d --name mongodb3 -v /hdd/data/mongodb3:/data
 
 ```sh
 $ docker run -i -t wizeye/n3n-ui-mongodb /bin/bash
-```sh
+```
 
 Edit the replicaSet.sh file in the container.
 
 ```sh
 $ ./replicaSet.sh
 $ exit
-```sh
+```
 
 ## MANUAL BUILD
 
