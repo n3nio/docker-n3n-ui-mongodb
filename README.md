@@ -13,18 +13,18 @@ $ docker pull wizeye/n3n-ui-mongodb
 Make the data folder
 
 ```sh
-$ mkdir /hdd/data
-$ mkdir /hdd/data/mongodb1
-$ mkdir /hdd/data/mongodb2
-$ mkdir /hdd/data/mongodb3
+$ mkdir /apps/data
+$ mkdir /apps/data/mongodb1
+#$ mkdir /hdd/data/mongodb2
+#$ mkdir /hdd/data/mongodb3
 ```
 
 Start the servers
 
 ```sh
-$ docker run -i -t -p 27017:27017 -d --name mongodb1 -v /hdd/data/mongodb1:/data/db wizeye/n3n-ui-mongodb
-$ docker run -i -t -p 27018:27017 -d --name mongodb2 -v /hdd/data/mongodb2:/data/db wizeye/n3n-ui-mongodb
-$ docker run -i -t -p 27019:27017 -d --name mongodb3 -v /hdd/data/mongodb3:/data/db wizeye/n3n-ui-mongodb
+$ docker run -i -t -p 27017:27017 -d --name mongodb1 -v /apps/data/mongodb1:/data/db wizeye/n3n-ui-mongodb
+#$ docker run -i -t -p 27018:27017 -d --name mongodb2 -v /hdd/data/mongodb2:/data/db wizeye/n3n-ui-mongodb
+#$ docker run -i -t -p 27019:27017 -d --name mongodb3 -v /hdd/data/mongodb3:/data/db wizeye/n3n-ui-mongodb
 ```
 
 Setting up the replication set
